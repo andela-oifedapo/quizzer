@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @quiz.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @quiz.user.email %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @quiz.tag %>
+  <%session[:current] = @quiz.id%>
+</p>
+
+<%= link_to 'Play', "/start_quiz" %>

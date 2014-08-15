@@ -1,0 +1,16 @@
+
+<%= form_tag(:controller => "players", :action => "record_progress") do %>  
+ 
+ <h2> Question <%=@question.question_number%>. &nbsp;
+  <%=@question.question%></h2>
+  <p> <%= radio_button_tag :user_answer, "option_a", false%><b>A.&nbsp</b><%=@question.option_a%></p>
+  <p><%= radio_button_tag :user_answer, "option_b", false%><b>B.&nbsp</b><%=@question.option_b%></p>
+  <p><%= radio_button_tag :user_answer, "option_c", false%><b>C.&nbsp</b><%=@question.option_c%></p>
+  <p><%= radio_button_tag :user_answer, "option_d", false%><b>D.&nbsp</b><%=@question.option_d%></p>
+  
+  
+  <!--<%= label_tag(:message, "What are you doing?") %><br />  
+  <%= text_area_tag(:message, nil, :size => "44x6") %><br />  -->
+  
+  <%= submit_tag("Next Question") %>  
+<% end %>

@@ -1,0 +1,28 @@
+<h1 style="text-align: center">Listing quizzes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title(tag)</th>
+      <th style="text-align: right">Tag</th>
+      <th style="text-align: right">Author</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quizzes.each do |quiz| %>
+      <tr>
+        <td><div id="navigation">
+	    <ul><li><%= link_to quiz.title, quiz%></a></li></ul></td></div>
+        <td style="text-align: right">
+	    <ul><li><a ><%=quiz.tag %></a></li></ul></td>
+        <td style="text-align: right">
+	    <ul><li><a ><%=quiz.user.email %></a></li></ul></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<%= link_to 'New Quiz', new_quiz_path %>-->

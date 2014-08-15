@@ -1,0 +1,24 @@
+
+  <table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Attempted quizzes</th>
+      <th style="text-align: right">progress</th>
+      <th style="text-align: right">score</th>
+    </tr>
+  </thead>
+<tbody>
+<% @players.each do |player| %>  
+  <tr>
+        <td><div id="navigation">
+	    <ul><li><%= link_to player.quiz.title, player.quiz%></td></li></ul>
+            
+        <td style="text-align: right">
+	    <ul><li><a >Question <%=player.progress %></a></li></ul></td>
+        
+        <td style="text-align: right">
+	    <ul><li><a ><%=player.score %> of <%=player.progress %></a></li></ul></td>
+        
+<% end %>
+ </tbody>
+</table>

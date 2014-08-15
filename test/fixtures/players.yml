@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quiz_id: 
+  user_id: 
+  score: 1
+  progress: 1
+
+two:
+  quiz_id: 
+  user_id: 
+  score: 1
+  progress: 1

@@ -1,0 +1,11 @@
+<h1>Welcome to Quizzer!!!</h1>
+<p>Play quizzes and create your own quiz
+</p>
+
+<div id="navigation">
+<ul>
+<li><%=link_to "play other quiz", "/quizzes"%></li><!--add a show quizzes url here-->
+<li><%=link_to "play most recently created quiz", @quiz%></li><!--add a play quiz url here that takes in @quiz as param-->
+<li><%=link_to "create your own quiz", new_quiz_path%></li>
+</ul>
+</div>
